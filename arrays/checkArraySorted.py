@@ -16,6 +16,7 @@ print(f"Is the array sorted? = {checkArraySorted(l)}")
 
 
 #Approach - 2:
+"""
 def checkArraySorted(arr):
     if arr==sorted(arr):
         return "sorted"
@@ -23,5 +24,5 @@ def checkArraySorted(arr):
         return "Not sorted"
 l=[1,12,30,4,5]
 print(f"Is the array sorted? = {checkArraySorted(l)}")
+"""
 
-print(sorted([1, 2, 30, 4, 5]))
