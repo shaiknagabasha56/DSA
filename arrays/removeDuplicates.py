@@ -1,10 +1,15 @@
 #Remove duplicates from the sorted array(non decrement order):
 def removeDuplicates(nums):
-        expectedNums=list(set(nums))
-        expectedNums.sort()
-        k=len(expectedNums)
-        return k,expectedNums
-l=[1,1,2,2,3,4,4,]
-print(f"Length of the array after removing duplicates = {removeDuplicates(l)}")
+        i=0
+        j=1
+        while j<len(nums):
+                if nums[i]==nums[j]:
+                        j+=1
+                else:
+                        i+=1
+                        nums[i]=nums[j]
+                        j+=1
+        return nums
 
-#not completed.
+nums=[1,1,2,3,3]
+print(removeDuplicates(nums))
