@@ -26,3 +26,4 @@ l=[1,12,30,4,5]
 print(f"Is the array sorted? = {checkArraySorted(l)}")
 """
 
+
