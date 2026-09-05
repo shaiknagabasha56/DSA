@@ -1,3 +1,5 @@
+#Approach:Brute Force technique
+"""
 def twoSum(nums,target):
     n=len(nums)
     for i in range(n):
@@ -15,6 +17,19 @@ def twoSum(nums,target):
 nums=[2,7,11,15]
 target=9
 print(twoSum(nums,target))
+"""
+
 
 #The above one is not a optimized one, so for optimized one solve using hash table
 #re upload in leetcode because i got O(n^2) instead of O(n)
+def twoSum(nums,target):
+    hashmap={}
+    for i in range(len(nums)):
+        complement=target-nums[i]
+        if complement in hashmap:
+            return [hashmap[complement],i]
+        hashmap[nums[i]]=i
+nums=[19,7,2,17,9]
+target=9
+print(twoSum(nums,target))
+    
