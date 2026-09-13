@@ -4,9 +4,7 @@
 """
 def checkArraySorted(arr):
     for i in range(len(arr)-1):
-        if arr[i]<=arr[i+1]:
-            continue
-        else:
+        if arr[i]>arr[i+1]:
             return "Not sorted"
     return "sorted"
 
