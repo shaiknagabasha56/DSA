@@ -78,4 +78,4 @@ result=maxSubArrayOfsizek(arr,k)
 print(result)
 """
 
-print(1+12-5-6)
+
